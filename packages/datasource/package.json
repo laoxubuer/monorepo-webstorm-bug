@@ -15,5 +15,9 @@
     "build": "yarn build:vite && yarn build:types"
   },
   "dependencies": {
+    "@turbopro/utils": "^1.1.1",
+    "@turbopro/utility-types": "^1.1.1",
+    "mockjs": "^1.0.1-beta3",
+    "moment": "^2.25.3"
   }
 }

@@ -16,9 +16,18 @@
     "build": "yarn build:vite && yarn build:types"
   },
   "dependencies": {
+    "@ctrl/tinycolor": "^3.4.0"
   },
   "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react": "^1.0.0"
   },
   "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-native": ">=0.65.1",
+    "react-native-paper": "^4.9.2",
+    "react-native-vector-icons": "^8.1.0",
+    "react-native-linear-gradient": "^2.5.6"
   }
 }

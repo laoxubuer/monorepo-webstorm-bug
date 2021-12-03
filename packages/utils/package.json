@@ -22,10 +22,11 @@
     "build": "yarn build:vite && yarn build:types"
   },
   "dependencies": {
-    "lodash": "^4.17.21",
-    "ahooks": "^2.10.14",
-    "moment": "^2.29.1"
+    "events": "^3.3.0",
+    "@turbopro/utility-types": "^1.1.1",
+    "umi-request": "^1.4.0"
   },
   "devDependencies": {
+    "@types/events": "^3.0.0"
   }
 }
