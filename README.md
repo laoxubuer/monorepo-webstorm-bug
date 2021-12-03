@@ -10,4 +10,4 @@
 4. open [./packages/utils/package.json](./packages/utils/package.json), then empty the dependencies content (keep this field).
 5. view this file [./apps/proa/src/index.less](./apps/proa/src/index.less) again, the intellisense comes back (if not, try to restart your webstorm, and view this file again).
 
-This problem was discovered about a year ago, and has not been repaired so far.
+This problem was discovered about a year ago, and has not been repaired so far.Both windows and mac platforms can be reproduced.
