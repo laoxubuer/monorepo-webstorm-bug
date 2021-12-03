@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "incremental": true,
+    "esModuleInterop": true,
+    "types": ["node", "vite/client"],
+    "declaration": true,
+    "declarationMap": true,
+    "isolatedModules": true
+  },
+  "exclude": ["node_modules", "dist"]
+}

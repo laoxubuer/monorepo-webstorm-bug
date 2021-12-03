@@ -1,0 +1,31 @@
+{
+  "name": "@turbopro/utils",
+  "version": "1.1.1",
+  "description": "Turbo Pro Utils",
+  "main": "dist/turbopro-utils.umd.js",
+  "module": "dist/turbopro-utils.es.js",
+  "types": "dist/index",
+  "exports": {
+    ".": {
+      "import": "./dist/turbopro-utils.es.js",
+      "require": "./dist/turbopro-utils.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "build:types": "tsc --build",
+    "build:vite": "vite build",
+    "dev": "yarn build:vite -- --watch --emptyOutDir=false",
+    "build": "yarn build:vite && yarn build:types"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "ahooks": "^2.10.14",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,17 @@
+**/node_modules/
+**/lambda/
+**/scripts/
+.history
+public
+dist
+.umi
+mock
+_templates
+**/config/
+
+# React Native
+babel.config.js
+metro.config.js
+
+# Vite
+vite.config.ts

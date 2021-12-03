@@ -1,0 +1,24 @@
+{
+  "name": "@turbopro/components-rn",
+  "version": "1.1.1",
+  "main": "dist/turbopro-components-rn.umd.js",
+  "module": "dist/turbopro-components-rn.es.js",
+  "types": "dist/index",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:types": "tsc --build",
+    "build:vite": "vite build",
+    "dev:types": "tsc -w",
+    "dev": "yarn build:vite -- --watch --mode dev --emptyOutDir=false",
+    "build": "yarn build:vite && yarn build:types"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "peerDependencies": {
+  }
+}

@@ -1,0 +1,32 @@
+# dependencies
+**/node_modules
+node_modules
+
+# umi
+.umi
+.umi-production
+
+# test
+.jest-cache
+coverage
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+
+# ides
+.idea
+*bak
+.vscode
+/.vscode
+
+# visual studio code
+.history
+*.log
+functions/*
+.temp/**
+
+# build
+**/dist
+tsconfig.tsbuildinfo

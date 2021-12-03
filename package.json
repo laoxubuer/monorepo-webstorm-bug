@@ -1,0 +1,49 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "1.1.1",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "preinstall": "node ./scripts/preinstall.js",
+    "postbootstrap": "yarn packages:build",
+    "packages:build": "lerna run --scope @turbopro/* --stream build",
+    "precommit": "lint-staged",
+    "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx "
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@umijs/fabric": "^2.6.2",
+    "@umijs/yorkie": "^2.0.5",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "deepmerge": "^4.2.2",
+    "eslint": "^7.1.0",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.0.0",
+    "prettier": "^2.4.1",
+    "rimraf": "~3.0.2",
+    "stylelint": "^13.0.0",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.4.4",
+    "vite": "^2.6.14"
+  },
+  "lint-staged": {
+    "**/*.less": "stylelint --syntax less",
+    "**/*.{js,jsx,ts,tsx}": [
+      "npm run lint-staged:js"
+    ],
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
+  },
+  "gitHooks": {
+    "commit-msg": "fabric verify-commit"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "apps/*"
+    ],
+    "nohoist": []
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@turbopro/datasource",
+  "version": "1.1.1",
+  "private": true,
+  "description": "mock数据",
+  "main": "dist/turbopro-datasource.umd.js",
+  "module": "dist/turbopro-datasource.es.js",
+  "types": "dist/index",
+  "files": ["dist"],
+  "license": "ISC",
+  "scripts": {
+    "build:types": "tsc --build",
+    "build:vite": "vite build",
+    "dev": "yarn build:vite -- --watch --emptyOutDir=false",
+    "build": "yarn build:vite && yarn build:types"
+  },
+  "dependencies": {
+  }
+}

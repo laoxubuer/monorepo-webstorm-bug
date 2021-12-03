@@ -1,0 +1,19 @@
+{
+  "name": "@turbopro/utility-types",
+  "version": "1.1.1",
+  "description": "共享的类型定义",
+  "main": "dist/index",
+  "module": "dist/index",
+  "types": "dist/index",
+  "files": ["dist"],
+  "license": "ISC",
+  "scripts": {
+    "dev": "tsc --watch",
+    "prebuild": "yarn run clean",
+    "build": "yarn run compile",
+    "clean": "rimraf -rf ./dist",
+    "compile": "tsc"
+  },
+  "dependencies": {
+  }
+}
